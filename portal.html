@@ -1,8 +1,15 @@
+---
+layout: default
+title:  "Advertiser Portal"
+---
+
+{% assign posts = site.posts | where_exp:"item", "item.categories contains 'portal'" %}
+
 <section>
-  {% for post in site.posts | where_exp:"item", "item.categories contains 'portal'" %}
+  {% for post in posts %}
     <article>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
+      <p>{{ post.content }}</p>
     </article>
   {% endfor %}
 </section>

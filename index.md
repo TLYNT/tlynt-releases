@@ -1,2 +1,0 @@
-[APP](/app/)
-[PORTAL](/portal/)

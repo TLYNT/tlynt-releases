@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% assign categs = '' | split: '' %}
+{% for categ in site.categories %}
+  {% assign categs = categs | push: categ[0] %}
+{% endfor %}
+{% assign categs = categs | sort %}
+
+<section>
+  {% for categ in categs %}
+    <article>
+      <h3><a href="/{{ categ }}/">{{ categ | capitalize }} Releases</a></h3>
+    </article>
+  {% endfor %}
+</section>
