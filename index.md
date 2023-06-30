@@ -1,3 +1,2 @@
-# TLYNT
-
-Release Notes
+[APP](/app/)
+[PORTAL](/portal/)
