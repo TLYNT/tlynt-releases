@@ -1,0 +1,68 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+.Home {
+  &__Header {
+    width: unset;
+    float: unset;
+    position: unset;
+
+    margin-bottom: 48px;
+  }
+
+  &__Button {
+    padding: 8px 16px;
+    background-color: Black;
+    color: White;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-weight: bold;
+    
+    &:last-of-type {
+      margin-right: unset;
+    }
+
+    &:hover {
+      color: White;
+    }
+  }
+
+  &__AppButton {
+    &:hover {
+      background-color: #3CAF6E;
+    }
+  }
+
+  &__PortalButton {
+    &:hover {
+      background-color: #286EB4;
+    }
+  }
+
+  &__Releases {
+    width: unset;
+    float: unset;
+    padding-bottom: unset;
+  }
+}
+
+.Base {
+  a {
+    color: #FAAA00;
+  }
+}
+
+.App {
+  a {
+    color: #3CAF6E;
+  }
+}
+
+.Portal {
+  a {
+    color: #286EB4;
+  }
+}
