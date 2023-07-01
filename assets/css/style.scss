@@ -3,6 +3,30 @@
 
 @import "jekyll-theme-minimal";
 
+a {
+  &:hover {
+    font-weight: inherit;
+  }
+}
+
+.Base {
+  a {
+    color: #FAAA00;
+  }
+}
+
+.App {
+  a {
+    color: #3CAF6E;
+  }
+}
+
+.Portal {
+  a {
+    color: #286EB4;
+  }
+}
+
 .Home {
   &__Header {
     width: unset;
@@ -12,9 +36,9 @@
     margin-bottom: 48px;
   }
 
-  &__Button {
+  &__Header &__Button {
     padding: 8px 16px;
-    background-color: Black;
+    background-color: #FAAA00;
     color: White;
     cursor: pointer;
     text-transform: uppercase;
@@ -27,6 +51,7 @@
 
     &:hover {
       color: White;
+      font-weight: bold;
     }
   }
 
@@ -46,23 +71,5 @@
     width: unset;
     float: unset;
     padding-bottom: unset;
-  }
-}
-
-.Base {
-  a {
-    color: #FAAA00;
-  }
-}
-
-.App {
-  a {
-    color: #3CAF6E;
-  }
-}
-
-.Portal {
-  a {
-    color: #286EB4;
   }
 }

@@ -27,22 +27,20 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body>
+  <body class="{{ theme }}">
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}"><img src="{{ logo_url | append: "?v=" | append: site.github.build_revision | relative_url }}" alt="{{ site.title | default: site.github.repository_name }}" /></a></h1>
       </header>
 
-      <section class="{{ theme }}">
+      <section>
 
       {{ content }}
 
       </section>
 
       <footer>
-        {% if site.github.is_project_page %}
-        <p><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        <p><a href="{{ site.public_website }}">joinTLYNT.com</a></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
