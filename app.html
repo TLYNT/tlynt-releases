@@ -9,8 +9,8 @@ permalink: /app/
 <section>
   {% for post in posts %}
     <article>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <small>{{ post.date | date: "%B %-d %Y" }}</small>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.content }}</p>
     </article>
   {% endfor %}
