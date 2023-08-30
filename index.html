@@ -7,9 +7,9 @@ layout: default
   <a href="{{ "/portal/"  | relative_url }}" class="Home__Button Home__PortalButton">Portal Releases</a>
 </header>
 
-<section class="Home__Releases">
+<section class="Home__Releases Releases">
   {% for post in site.posts %}
-    <article>
+    <article class="Releases__Item">
       <small>{{ post.date | date: "%B %-d %Y" }}</small>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.content }}</p>

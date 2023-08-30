@@ -6,9 +6,9 @@ permalink: /portal/
 
 {% assign posts = site.posts | where_exp:"item", "item.categories contains 'portal'" %}
 
-<section>
+<section class="Releases">
   {% for post in posts %}
-    <article>
+    <article class="Releases__Item">
       <small>{{ post.date | date: "%B %-d %Y" }}</small>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.content }}</p>
